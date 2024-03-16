@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Kompeten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family:'poppins';
+        font-weight: bold;
+    }
+
+    body{
+        background-color: rgb(217, 235, 186);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        /* font-family: sans-serif; */
+        height: 100vh;
+        margin: -20px 0 50px;
+        margin: 0;
+        letter-spacing: .3px;
+    }
+
+    .container{
+        background-color: white;
+        border-radius: 10px;
+         /* box-shadow: 0 4px 50px rgba(0, 0, 0.1), 0 10px 10px rgba(0, 0, 0.1); */
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        max-width: 100%;
+        min-height: 500px;
+    }
+
+    .form-container{
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+
+    .h1{
+        /* font-family: sans-serif; */
+        position: relative;
+        left: 60%;
+        color:rgb(0, 102, 238);
+    }
+
+    form h2{
+        /* font-family: sans-serif; */
+        position: relative;
+        left: 60.5%;
+    }
+
+    input {
+        width: 30%;
+        border-radius: 5px 1px;
+        /* font-weight: bold; */
+        border-style: solid;
+        border-color: rgb(0, 102, 238);
+        margin: 0px 20px;
+        padding: 18px 0px;
+        text-align: center;
+        position: relative;
+        left: 60.5%;
+        text-shadow: 2px 2px 5px rgb(0, 102, 238);
+    }
+
+    .btn{
+        text-align: start;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    button {
+        border-radius: 5px 1px;
+        /* font-weight: bold; */
+        padding: 18px 60px;
+        color: white;
+        border: none;
+        margin-top: 30px;
+        border: none;
+        box-shadow: 1px 2px 5px  rgb(0, 102, 238);
+        transition: all 0.3s;
+        position: relative;
+        left: 60.5%;
+        background-color: rgb(0, 102, 238);
+    }
+
+    
+</style>
+<body>
+    <div class=" container">
+        <div class="h1"><h1>CEK KETERANGAN NILAI</h1></div>
+        <form method="post">
+            <h2>Nama</h2>
+        <input type="text" name="nama" placeholder="NAMA" id="inputNama" required><br/>
+            <h2>Nilai</h2>
+            <input type="number" name="nilai"  placeholder="NILAI" id="inputNilai" required><br/>	
+            <div class="btn">
+                <button  type="submit">Kirim</button>
+            </div>
+        </form>
+
+        <div class="container2">
+        </div>
+    </div>
+   
+</body>
+</html>
